@@ -9,18 +9,18 @@ class Result extends StatelessWidget {
   //Remark Logic 
   String get resultPhrase { 
     String resultText; 
-    if (resultScore >= 41) { 
-      resultText = 'You are awesome!'; 
+    if (resultScore >= 164) { 
+      resultText = 'Tu es incroyable, courage pour la lecture de la Bible!!'; 
       print(resultScore); 
-    } else if (resultScore >= 31) { 
-      resultText = 'Pretty likeable!'; 
+    } else if (resultScore >= 124) { 
+      resultText = 'Assez sympathique, courage pour la lecture de la Bible'; 
       print(resultScore); 
-    } else if (resultScore >= 21) { 
-      resultText = 'You need to work more!'; 
-    } else if (resultScore >= 1) { 
-      resultText = 'You need to work hard!'; 
+    } else if (resultScore >= 84) { 
+      resultText = 'Vouz devez Lire la Bible!!'; 
+    } else if (resultScore >= 4) { 
+      resultText = 'Tu a besoin de lire plus la Bible!!'; 
     } else { 
-      resultText = 'This is a poor score!'; 
+      resultText = "Tu a besoin d'augmenter votre temps de lire la Bible!!"; 
       print(resultScore); 
     } 
     return resultText; 
@@ -44,7 +44,7 @@ class Result extends StatelessWidget {
           ), //Text 
           FlatButton( 
             child: Text( 
-              'Restart Quiz!', 
+              'Redémarrer le Quiz!!', 
             ), //Text 
             textColor: Colors.blue, 
             onPressed: resetHandler, 
